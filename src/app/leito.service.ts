@@ -9,17 +9,17 @@ import { leito } from './leito';
 })
 export class LeitoService {
   
-  private baseUrl = "localhost:8080/api/leito";
+  private baseUrl = "http://localhost:8080/leitos";
 
 
   constructor(private httpClient: HttpClient) { }
 
   getleitosList(): Observable<leito[]>{
-    return this.httpClient.get<leito[]>(`${this.baseUrl}`);
+    return this.httpClient.get<leito[]>(`${this.baseUrl}/lista-leitos`);
   }
 
   createLeito(leito: leito): Observable<Object>{
-    return this.httpClient.post(`${this.baseUrl}`, leito)
+    return this.httpClient.post(`${this.baseUrl}/post-leito`, leito)
   }
 
   getLeitoById(id: number): Observable<leito>{
