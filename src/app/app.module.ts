@@ -8,6 +8,12 @@ import { DetalhesLeitoComponent } from './detalhes-leito/detalhes-leito.componen
 import { ListaLeitoComponent } from './lista-leito/lista-leito.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+
+
+
 
 @NgModule({
   declarations: [
@@ -15,15 +21,18 @@ import { HttpClientModule } from '@angular/common/http';
     CreateLeitoComponent,
     UpdateLeitoComponent,
     DetalhesLeitoComponent,
-    ListaLeitoComponent
+    ListaLeitoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
