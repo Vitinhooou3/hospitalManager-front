@@ -6,10 +6,10 @@ import { UpdateLeitoComponent } from './update-leito/update-leito.component';
 import { DetalhesLeitoComponent } from './detalhes-leito/detalhes-leito.component';
 
 const routes: Routes = [
-  {path: 'leitos', component: ListaLeitoComponent},
-  {path: 'create-leito', component: CreateLeitoComponent },
-  {path: 'update-leito/:id', component: UpdateLeitoComponent},
-  {path: 'detalhes-leito/:id', component: DetalhesLeitoComponent}
+  {path: 'home', component: ListaLeitoComponent},
+  {path: 'criar', component: CreateLeitoComponent},
+  {path: 'detalhes', component: DetalhesLeitoComponent},
+  {path: 'update', component: UpdateLeitoComponent}
 ];
 
 @NgModule({
