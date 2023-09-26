@@ -27,12 +27,17 @@ export class CreateLeitoComponent implements OnInit {
   }
 
   goToLeitosList(){
-    this.router.navigate(['/leitos'])
+    this.router.navigate(['home'])
   }
 
   onSubmit(){
     console.log(this.leitos)
     this.saveLeito()
+  }
+
+
+  mudarRota(){
+    this.router.navigate(['home'])
   }
   
 }

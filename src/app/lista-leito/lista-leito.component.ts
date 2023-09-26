@@ -32,7 +32,7 @@ export class ListaLeitoComponent implements OnInit {
   }
 
   mudarRotaCreate(): void{
-    this.route.navigate(['/create-leito'])
+    this.route.navigate(['criar'])
   }
 
 
