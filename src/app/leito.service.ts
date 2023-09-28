@@ -9,13 +9,13 @@ import { leito } from './leito';
 })
 export class LeitoService {
   
-  private baseUrl = "http://localhost:8080/leitos";
+  private baseUrl = "http://localhost:8080/pacientes";
 
 
   constructor(private httpClient: HttpClient) { }
 
   getleitosList(): Observable<leito[]>{
-    return this.httpClient.get<leito[]>(`${this.baseUrl}/lista-leitos`);
+    return this.httpClient.get<leito[]>(`${this.baseUrl}`);
   }
 
   createLeito(leito: leito): Observable<Object>{

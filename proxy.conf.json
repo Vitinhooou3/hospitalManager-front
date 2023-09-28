@@ -1,0 +1,6 @@
+{
+    "/api":{
+        "targe": "http://localhost:8080/leitos",
+        "secure": false
+    }
+}

@@ -1,17 +1,15 @@
-import { NgModule } from '@angular/core';
+import { NgModule, forwardRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CreateLeitoComponent } from './create-leito/create-leito.component';
-import { UpdateLeitoComponent } from './update-leito/update-leito.component';
-import { DetalhesLeitoComponent } from './detalhes-leito/detalhes-leito.component';
 import { ListaLeitoComponent } from './lista-leito/lista-leito.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { ListaPacientesComponent } from './lista-pacientes/lista-pacientes.component';
+import { CriarPacienteComponent } from './criar-paciente/criar-paciente.component';
 
 
 
@@ -22,10 +20,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
   declarations: [
     AppComponent,
-    CreateLeitoComponent,
-    UpdateLeitoComponent,
-    DetalhesLeitoComponent,
     ListaLeitoComponent,
+    ListaPacientesComponent,
+    CriarPacienteComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +30,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

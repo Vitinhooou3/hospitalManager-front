@@ -1,0 +1,27 @@
+<h1>Lista De pacientes cadastrados</h1>
+<br>
+
+<div class="containertabela">
+    <div class="cabecalho">
+        <header>
+            <ul><h3>Id paciente</h3></ul>
+            <ul><h3>Nome</h3></ul>
+            <ul><h3>Idade</h3></ul>
+            <ul><h3>convenio</h3></ul>
+            <ul><h3>Sexo</h3></ul>
+        </header>
+    </div>
+    <div class="informacoes">
+        <ul *ngFor="let pacientes of pacientes">
+            <li>{{pacientes.id_paciente}}</li>
+            <li>{{pacientes.nome}}</li>
+            <li>{{pacientes.idade}}</li>
+            <li>{{pacientes.convenio}}</li>
+            <li>{{pacientes.sexo}}</li>
+        </ul>
+    </div>
+
+    <button (click)="mudarRota()">OIIIIIIIIIIIII</button>
+
+
+</div>

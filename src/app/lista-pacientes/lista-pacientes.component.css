@@ -1,0 +1,30 @@
+tr{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+th{
+    width: 20vw;
+}
+
+.informacoes{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li{
+    marker: none;
+    list-style-type: none;
+    width: 20vw;
+}
+
+ul{
+    display: flex
+}
