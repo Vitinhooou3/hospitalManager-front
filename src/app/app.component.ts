@@ -9,9 +9,4 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'HospitalManager-Front';
   constructor(private route: Router){}
-
-  mudarRota(): void{
-    this.route.navigate(['/leitos'])
-  }
-
 }

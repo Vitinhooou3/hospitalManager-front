@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center"> Cadastrar Aluno </h3>
+            <hr />
+            <div class="card-body">
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label> Nome</label>
+                        <input type="text" class="form-control" id="nome" [(ngModel)]="paciente.nome"
+                            name="nome">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Idade </label>
+                        <input type="number" class="form-control" id="idade" [(ngModel)]="paciente.idade"
+                            name="idade">
+                    </div>
+
+                    <div class="form-group">
+                        <label> CPF</label>
+                        <input type="text" class="form-control" id="cpf" [(ngModel)]="paciente.cpf"
+                            name="cpf">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Gênero</label>
+                        <input type="text" class="form-control" id="sexo" [(ngModel)]="paciente.sexo"
+                            name="cpf">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Convênio </label>
+                        <input type="text" class="form-control" id="convenio" [(ngModel)]="paciente.convenio"
+                            name="convenio">
+                    </div>
+
+
+                    <br />
+                    <button class="btn btn-success" type="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<button (click)="mudarRota()"></button>

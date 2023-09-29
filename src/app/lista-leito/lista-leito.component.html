@@ -12,16 +12,11 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let leitos from leito">
-            <td>{{leitos.id}}</td>
-            <td>{{leitos.disponibilidade}}</td>
-            <td>{{leitos.paciente_id}}</td>
-            <td>{{leitos.medico_id}}</td>
-            <td>
-                <button (click)="updateLeito(leitos.id)" class="btn btn-primary">Update</button>
-                <button (click)="leitoDetalhes(leitos.id)" class="btn btn-primar">Detalhes</button>"
-                <button (click)="mudarRotaCreate()">oiii</button>
-            </td>
-        </tr>
+        <ul *ngFor="let leitos of leito">
+            <li>{{leitos.Id}}</li>
+            <li>{{leitos.disponivel}}</li>
+            <li>{{leitos.medico}}</li>
+            <li>{{leitos.paciente}}</li>
+        </ul>
     </tbody>
 </table>
