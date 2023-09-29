@@ -16,7 +16,7 @@ getPacientesList(): Observable<paciente[]>{
   return this.httpClient.get<paciente[]>(`${this.baseUrl}`);
 }
 
-createPaciente(paciente : paciente): Observable<Object>{
+createPaciente(paciente : paciente): Observable<any>{
   return this.httpClient.post(`${this.baseUrl}/post`, paciente)
 }
 

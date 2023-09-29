@@ -1,27 +1,38 @@
-<h1>Lista De pacientes cadastrados</h1>
-<br>
 
-<div class="containertabela">
-    <div class="cabecalho">
-        <header>
-            <ul><h3>Id paciente</h3></ul>
-            <ul><h3>Nome</h3></ul>
-            <ul><h3>Idade</h3></ul>
-            <ul><h3>convenio</h3></ul>
-            <ul><h3>Sexo</h3></ul>
-        </header>
-    </div>
-    <div class="informacoes">
-        <ul *ngFor="let pacientes of pacientes">
-            <li>{{pacientes.id_paciente}}</li>
-            <li>{{pacientes.nome}}</li>
-            <li>{{pacientes.idade}}</li>
-            <li>{{pacientes.convenio}}</li>
-            <li>{{pacientes.sexo}}</li>
-        </ul>
-    </div>
-
-    <button (click)="mudarRota()">OIIIIIIIIIIIII</button>
+<div class="card">
+    <button type="button" pButton pRipple label="Activate Last" class="mb-3"></button>
+</div>
 
 
+<div class="row">
+    <h2 style="text-align: center;"> Lista de Alunos </h2>
+</div>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NOME</th>
+            <th>IDADE</th>
+            <th>CONVENIO</th>
+            <th>GÊNERO</th>
+
+            <th style="text-align: center;">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let paciente of pacientesList">
+            <td>{{paciente.id}}</td>
+            <td>{{ paciente.nome }}</td>
+            <td>{{ paciente.idade }}</td>
+            <td>{{ paciente.convenio }}</td>
+            <td>{{paciente.sexo}}</td>
+            <td style="text-align: center;">
+                <button mat-raised-button style="background-color: red;">Deletar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div style="text-align: right;">
+    <button mat-button style="background-color: lightgreen;" (click)="mudarRota()">Cadastrar Aluno</button>
 </div>

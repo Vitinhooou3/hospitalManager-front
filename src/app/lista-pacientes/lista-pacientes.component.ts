@@ -10,8 +10,8 @@ import { Observable } from 'rxjs';
   styleUrls: ['./lista-pacientes.component.css']
 })
 export class ListaPacientesComponent implements OnInit {
-  paciente : any
-  pacientes : any[]
+
+  pacientesList : any[]
   httpClient: any;
   constructor(
     private paServ: PacientesService,
@@ -19,7 +19,7 @@ export class ListaPacientesComponent implements OnInit {
 
   )
   {
-    this.pacientes = []
+    this.pacientesList = []
   }
 
   ngOnInit() {
@@ -28,7 +28,7 @@ export class ListaPacientesComponent implements OnInit {
 
   getPacientes() {
     this.paServ.getPacientesList().subscribe(data => {
-      this.pacientes = data;
+      this.pacientesList = data;
       console.log(data)
     })
   }
@@ -38,15 +38,9 @@ export class ListaPacientesComponent implements OnInit {
     this.router.navigate(['/criar-paciente'])
   }
 
-
-  postPaciente(paciente: paciente){
-    this.paServ.createPaciente(paciente).subscribe(data => {
-      this.paciente = data
-    })
-  }
-
-
-  
-
-  
 }
+
+
+  
+
+  
