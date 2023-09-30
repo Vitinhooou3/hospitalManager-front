@@ -12,18 +12,11 @@ import { PacientesService } from '../pacientes.service';
 })
 export class CriarPacienteComponent {
 
-  convenio: boolean = true
 
   paciente: paciente = new paciente()
 
-  sexo : any[] =[
-    {genero: "Masculino"},
-    {genero: "Feminino"},
-    {genero: "Não-binário"}
-  ]
   constructor(
     private rout: Router,
-    private http: HttpClient,
     private pacienteService : PacientesService
   )
   {
@@ -37,9 +30,6 @@ export class CriarPacienteComponent {
     })
   }
 
-
-  pacienteConvenio: boolean = true;
-
   onSubmit()
   {
     console.log(this.paciente)
@@ -49,7 +39,8 @@ export class CriarPacienteComponent {
 
 
 
-  mudarRota(){
+  mudarRota()
+  {
     this.rout.navigate(['/pacientes'])
   }
 }
