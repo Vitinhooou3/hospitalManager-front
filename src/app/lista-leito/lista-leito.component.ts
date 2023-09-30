@@ -9,27 +9,28 @@ import { Router } from '@angular/router';
 })
 export class ListaLeitoComponent implements OnInit{
 
-  public leito: any[] 
+  private leitos: any[] 
 
   constructor(
     private leitoService: LeitoService,
     private router: Router
   )
   {
-    this.leito = []
+    this.leitos = []
   }
 
 
 
   getLeitos() {
-    this.leitoService.getleitosList().subscribe(data => {
-      this.leito = data;
-      console.log(data)
+    this.leitoService.getleitosList().subscribe(leitosList => {
+      this.leitos = leitosList;
+      console.log(this.leitos)
     })
   }
 
   ngOnInit() {
     this.getLeitos()
+    console.log(this.leitos)
   }
 
 }

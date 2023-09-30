@@ -9,7 +9,7 @@ import { leito } from './leito';
 })
 export class LeitoService {
   
-  private baseUrl = "http://localhost:8080/pacientes";
+  private baseUrl = "http://localhost:8080/leitos";
 
 
   constructor(private httpClient: HttpClient) { }
@@ -18,19 +18,19 @@ export class LeitoService {
     return this.httpClient.get<leito[]>(`${this.baseUrl}`);
   }
 
-  createLeito(leito: leito): Observable<Object>{
-    return this.httpClient.post(`${this.baseUrl}/post-leito`, leito)
+  createLeito(leito: leito): Observable<any>{
+    return this.httpClient.post(`${this.baseUrl}/post`, leito)
   }
 
   getLeitoById(id: number): Observable<leito>{
     return this.httpClient.get<leito>(`${this.baseUrl}/${id}`)
   }
 
-  updateLeito(id: number, leito: leito): Observable<Object>{
+  updateLeito(id: number, leito: leito): Observable<any>{
     return this.httpClient.put(`${this.baseUrl}/${id}`, leito)
   }
 
-  deleteLeito(id: number): Observable<Object>{
+  deleteLeito(id: number): Observable<any>{
     return this.httpClient.delete(`${this.baseUrl}/${id}`)
   }
 

@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 export class ListaPacientesComponent implements OnInit {
 
   pacientesList : any[]
-  httpClient: any;
+
   constructor(
     private paServ: PacientesService,
     private router : Router
