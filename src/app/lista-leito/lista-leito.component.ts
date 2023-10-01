@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class ListaLeitoComponent implements OnInit{
 
-  private leitos: any[] 
+   leitos: any[] 
 
   constructor(
     private leitoService: LeitoService,
@@ -31,6 +31,11 @@ export class ListaLeitoComponent implements OnInit{
   ngOnInit() {
     this.getLeitos()
     console.log(this.leitos)
+  }
+
+  mudarRota()
+  {
+    this.router.navigate(['/criar-leito'])
   }
 
 }
