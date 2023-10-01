@@ -33,7 +33,7 @@ export class ListaLeitoComponent implements OnInit{
     console.log(this.leitos)
   }
 
-  mudarRota()
+  mudarRota1()
   {
     this.router.navigate(['/criar-leito'])
   }
