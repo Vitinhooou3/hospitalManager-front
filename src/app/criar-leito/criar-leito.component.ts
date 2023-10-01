@@ -45,7 +45,7 @@ export class CriarLeitoComponent {
     this.route.navigate(['criar-paciente'])
   }
 
-  mudarRota4()
+  mudarRota3()
   {
     this.route.navigate(['criar-medico'])
   }
