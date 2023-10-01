@@ -39,4 +39,14 @@ export class CriarLeitoComponent {
   mudarRota(){
     this.route.navigate(['/home'])
   }
+
+  mudarRota2()
+  {
+    this.route.navigate(['criar-paciente'])
+  }
+
+  mudarRota3()
+  {
+    this.route.navigate(['criar-medico'])
+  }
 }

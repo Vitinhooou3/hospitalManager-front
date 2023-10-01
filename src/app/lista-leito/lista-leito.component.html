@@ -1,22 +1,34 @@
+<div class="card">
+    <button type="button" pButton pRipple label="Activate Last" class="mb-3"></button>
+</div>
+
+
 <div class="row">
-    <h2>Lista de Leitos</h2>
+    <h2 style="text-align: center;"> Lista de leitos </h2>
 </div>
 
 <table class="table table-striped table-bordered">
     <thead>
         <tr>
-            <th>Id Leitos</th>
-            <th>Dispinibilidade</th>
-            <th>Id_paciente</th>
-            <th>Id_medico</th>
+            <th>ID</th>
+            <th>ID MEDICO</th>
+            <th>ID PACIENTE</th>
+
+
+            <th style="text-align: center;">Ações</th>
         </tr>
     </thead>
     <tbody>
-        <ul *ngFor="let leitos of leito">
-            <li>{{leitos.Id}}</li>
-            <li>{{leitos.disponivel}}</li>
-            <li>{{leitos.medico}}</li>
-            <li>{{leitos.paciente}}</li>
-        </ul>
+        <tr *ngFor="let leito of leitos">
+            <td>{{ leito.id }}</td>
+            <td>{{ leito.id_paciente }}</td>
+            <td>{{ leito.id_Medico }}</td>
+            <td style="text-align: center;">
+                <button mat-raised-button style="background-color: red;">Deletar</button>
+            </td>
+        </tr>
     </tbody>
 </table>
+<div style="text-align: right;">
+    <button mat-button style="background-color: lightgreen;" (click)="mudarRota()">Cadastrar Leito</button>
+</div>
