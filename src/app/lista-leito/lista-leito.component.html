@@ -24,7 +24,7 @@
             <td>{{ leito.id_paciente }}</td>
             <td>{{ leito.id_Medico }}</td>
             <td style="text-align: center;">
-                <button mat-raised-button style="background-color: red;">Deletar</button>
+                <button mat-raised-button (click)="detalharLeito(leito.id)">Visualizar</button>
             </td>
         </tr>
     </tbody>
