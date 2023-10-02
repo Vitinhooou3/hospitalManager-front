@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(184, 181, 181);
+    margin: 0;
+    padding: 0;
+}
+div{
+    margin: 10px;
+}
+
+.flex{
+    flex: 1;
+}
+
+.container{
+    display: flex;
+}

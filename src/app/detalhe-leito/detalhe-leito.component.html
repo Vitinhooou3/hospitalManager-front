@@ -1,4 +1,9 @@
-<table class="table table-striped table-bordered">
+
+<body>
+    <div class="row">
+        <h2 style="text-align: center;"> Informações dos leitos </h2>
+    </div>
+    <table class="table table-striped table-bordered">
     <thead>
         <tr>
             <th style="text-align: center;">ID</th>
@@ -7,8 +12,6 @@
             <th style="text-align: center;">NOME DO PACIENTE</th>
             <th style="text-align: center;">IDADE DO PACIENTE </th>
             <th style="text-align: center;">GÊNERO DO PACIENTE </th>
-
-            <th style="text-align: center;">Ações</th>
         </tr>
     </thead>
     <tbody>
@@ -20,3 +23,9 @@
             <td>{{ leito.paciente.idade}}</td>
             <td>{{ leito.paciente.sexo}}</td>
         </tr>
+    </tbody>
+</table>
+<div style="text-align: right;">
+    <button mat-button style="background-color: lightgreen;" (click)="mudarRota()">Cadastrar Aluno</button>
+</div>
+</body>
