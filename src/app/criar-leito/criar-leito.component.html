@@ -7,21 +7,21 @@
                 <form (ngSubmit)="onSubmit()">
 
                     <div class="form-group">
-                        <label> Paciente a ser atendido</label>
-                        <input type="number" class="form-control" id="paciente" [(ngModel)]="leito.id_paciente"
-                            name="paciente">
-                    </div>
-
-                    <div class="form-group">
-                        <label> Médico responsável </label>
+                        <label> Médico responsável</label>
                         <input type="number" class="form-control" id="medico" [(ngModel)]="leito.id_Medico"
                             name="medico">
                     </div>
 
                     <div class="form-group">
-                        <label> Leito </label>
-                        <input type="text" class="form-control" id="disponivel" [(ngModel)]="leito.disponivel"
-                            name="disponivel">
+                        <label> Paciente a ser atendido </label>
+                        <input type="number" class="form-control" id="paciente" [(ngModel)]="leito.id_paciente"
+                            name="idade">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Leito disponivel </label>
+                        <input type="text" class="form-control" id="cpf" [(ngModel)]="leito.disponivel"
+                            name="cpf">
                     </div>
 
                     <br />

@@ -39,7 +39,6 @@ export class ListaLeitoComponent implements OnInit{
   {
     this.router.navigate(['/criar-leito'])
   }
-
 }
 
 
