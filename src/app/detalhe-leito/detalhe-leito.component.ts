@@ -48,6 +48,10 @@ export class DetalheLeitoComponent implements OnInit {
     this.getLeitoById()
   }
   
+  mudarRota()
+  {
+    
+  }
 
 
 }
