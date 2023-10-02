@@ -19,7 +19,9 @@ export class ListaLeitoComponent implements OnInit{
     this.leitos = []
   }
 
-
+  detalharLeito(id: number){
+    this.router.navigate(['detalhes-leito', id])
+  }
 
   getLeitos() {
     this.leitoService.getleitosList().subscribe(leitosList => {
