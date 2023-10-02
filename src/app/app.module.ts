@@ -23,6 +23,7 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { CriarMedicoComponent } from './criar-medico/criar-medico.component';
 import { ListaMedicosComponent } from './lista-medicos/lista-medicos.component';
+import { DetalheLeitoComponent } from './detalhe-leito/detalhe-leito.component';
 
 
 
@@ -35,6 +36,7 @@ import { ListaMedicosComponent } from './lista-medicos/lista-medicos.component';
     CriarLeitoComponent,
     CriarMedicoComponent,
     ListaMedicosComponent,
+    DetalheLeitoComponent,
   ],
   imports: [
     BrowserModule,

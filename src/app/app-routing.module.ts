@@ -6,6 +6,7 @@ import { CriarPacienteComponent } from './criar-paciente/criar-paciente.componen
 import { CriarLeitoComponent } from './criar-leito/criar-leito.component';
 import { CriarMedicoComponent } from './criar-medico/criar-medico.component';
 import { ListaMedicosComponent } from './lista-medicos/lista-medicos.component';
+import { DetalheLeitoComponent } from './detalhe-leito/detalhe-leito.component';
 
 const routes: Routes = [
   {path: 'home', component: ListaLeitoComponent},
@@ -14,7 +15,9 @@ const routes: Routes = [
 
   {path: 'criar-paciente', component: CriarPacienteComponent},
   {path: 'criar-leito', component: CriarLeitoComponent},
-  {path: 'criar-medico', component: CriarMedicoComponent}
+  {path: 'criar-medico', component: CriarMedicoComponent},
+
+  {path: 'detalhe-leito', component: DetalheLeitoComponent},
 
 ];
 
