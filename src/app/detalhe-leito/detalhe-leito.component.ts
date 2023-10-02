@@ -12,7 +12,7 @@ export class DetalheLeitoComponent implements OnInit {
   id : number
   leito : leito = new leito()
   
-
+  leitos : leito[]
   constructor(
     private route : ActivatedRoute, 
     private leitoService: LeitoService
@@ -20,6 +20,7 @@ export class DetalheLeitoComponent implements OnInit {
   )
   {
     this.id = 0
+    this.leitos = []
   }
 
   getLeitoById()
@@ -33,8 +34,17 @@ export class DetalheLeitoComponent implements OnInit {
     })
 
   }
+  getLeitos() {
+    this.leitoService.getleitosList().subscribe(leitosList => {
+      this.leitos = leitosList;
+      console.log(this.leitos)
+    })
+  }
+
+
 
   ngOnInit() : void{
+    this.getLeitos()
     this.getLeitoById()
   }
   
