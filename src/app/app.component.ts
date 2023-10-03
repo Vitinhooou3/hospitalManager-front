@@ -8,5 +8,38 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'HospitalManager-Front';
-  constructor(private route: Router){}
+  constructor(private router: Router){}
+
+
+
+
+  adicionarPaciente()
+  {
+    this.router.navigate(['/criar-paciente'])
+  }
+
+  adicionarMedico()
+  {
+    this.router.navigate(['/criar-medico'])
+  }
+
+  adicionarLeito()
+  {
+    this.router.navigate(['criar-leito'])
+  }
+
+  mostrarLeitos()
+  {
+    this.router.navigate(['/detalhe-leito'])
+  }
+
+  mostrarPaciente()
+  {
+    this.router.navigate(['/pacientes'])
+  } 
+  
+  mostrarMedicos()
+  {
+    this.router.navigate(['/medicos'])
+  }
 }

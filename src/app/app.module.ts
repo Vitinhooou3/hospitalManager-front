@@ -11,8 +11,10 @@ import { ListaPacientesComponent } from './lista-pacientes/lista-pacientes.compo
 import { CriarPacienteComponent } from './criar-paciente/criar-paciente.component';
 import { ListaLeitoComponent } from './lista-leito/lista-leito.component';
 import { CriarLeitoComponent } from './criar-leito/criar-leito.component';
+import { DetalheLeitoComponent } from './detalhe-leito/detalhe-leito.component';
+import { CriarMedicoComponent } from './criar-medico/criar-medico.component';
+import { ListaMedicosComponent } from './lista-medicos/lista-medicos.component';
 import { AppComponent } from './app.component';
-
 
 import { InputMaskModule } from 'primeng/inputmask';
 import { CalendarModule } from 'primeng/calendar';
@@ -21,9 +23,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { TableModule } from 'primeng/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { TabMenuModule } from 'primeng/tabmenu';
-import { CriarMedicoComponent } from './criar-medico/criar-medico.component';
-import { ListaMedicosComponent } from './lista-medicos/lista-medicos.component';
-import { DetalheLeitoComponent } from './detalhe-leito/detalhe-leito.component';
+import {MatButtonModule} from '@angular/material/button'
 
 
 
@@ -52,6 +52,7 @@ import { DetalheLeitoComponent } from './detalhe-leito/detalhe-leito.component';
     TableModule,
     MatToolbarModule,
     TabMenuModule,
+    MatButtonModule
     
   ],
   providers: [],

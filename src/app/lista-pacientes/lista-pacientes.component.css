@@ -6,7 +6,13 @@ td{
     text-align: center;
 }
 
+th{
+    text-align: center;
+}
 header{
     display: flex;
     justify-content: space-evenly;
+}
+.cabeçalho{
+    margin: 15px;
 }

@@ -1,1 +1,13 @@
+    <h1>HOSPITAL MANAGER</h1>
+    <mat-toolbar style="background-color: lightblue; color: black">
+        <mat-toolbar-row>
+        <button mat-stroked-button class="cabeçalho" (click)="adicionarMedico()">Adicionar Médicos</button>
+        <button mat-stroked-button class="cabeçalho" (click)="adicionarPaciente()">Adicionar Paciente</button>
+        <button mat-stroked-button class="cabeçalho" (click)="adicionarLeito()">Adicionar Leito</button>
+
+        <button mat-stroked-button class="cabeçalho" (click)="mostrarMedicos()">Mostrar Médicos</button>
+        <button mat-stroked-button class="cabeçalho" (click)="mostrarPaciente()">Mostrar Pacientes</button>
+        <button mat-stroked-button class="cabeçalho" (click)="mostrarLeitos()">Mostrar Leitos</button>
+        </mat-toolbar-row>
+    </mat-toolbar>
 <router-outlet></router-outlet>

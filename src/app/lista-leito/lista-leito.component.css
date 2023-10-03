@@ -17,3 +17,6 @@ div{
 .container{
     display: flex;
 }
+.cabeçalho{
+    margin: 15px;
+}
