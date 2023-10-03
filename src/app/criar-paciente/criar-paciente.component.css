@@ -19,3 +19,6 @@ header{
     display: flex;
     justify-content: space-evenly;
 }
+.cabeçalho{
+    margin: 15px;
+}

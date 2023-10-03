@@ -1,37 +1,25 @@
 <body>
-
-    <br>
-    <header>
-        <button (click)="adicionarLeito()">ADICIONAR LEITO</button>
-        <button (click)="adicionarMedico()">ADICIONAR MÉDICO</button>
-        <button (click)="adicionarPaciente()">ADICIONAR PACIENTE </button>
-
-        <button (click)="mostrarLeitos()">LISTA DE LEITOS</button> 
-        <button (click)="mostrarPaciente()">LISTA DE PACIENTE</button>
-    </header>
-    <br><br>
-
-    <h2 style="text-align: center;"> Lista de medicos </h2>
-    <div class="container">
-        <div class="row">
-            <table class="table table-striped table-bordered">
-                 <thead>
-                    <tr>
-                    <th style="text-align: center;">ID</th>
-                        <th style="text-align: center;">NOME</th>
-                        <th style="text-align: center;">ESPECIALIDADE</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let medico of medicosList">
-                        <td>{{ medico.id }}</td>
-                        <td>{{ medico.nome }}</td>
-                        <td>{{ medico.especialidade }}</td>
-                    </tr>
-                </tbody>
-            </table>
+        <h2 style="text-align: center;"> Lista de medicos </h2>
+        <div class="container">
+            <div class="row">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                        <th style="text-align: center;">ID</th>
+                            <th style="text-align: center;">NOME</th>
+                            <th style="text-align: center;">ESPECIALIDADE</th>
+                        </tr>
+                     </thead>
+                    <tbody>
+                        <tr *ngFor="let medico of medicosList">
+                            <td>{{ medico.id }}</td>
+                            <td>{{ medico.nome }}</td>
+                            <td>{{ medico.especialidade }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
 </body>
 
     
