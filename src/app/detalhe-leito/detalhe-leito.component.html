@@ -1,5 +1,17 @@
 
 <body>
+    <br>
+
+    <header>
+        <button (click)="adicionarLeito()">ADICIONAR LEITO</button>
+        <button (click)="adicionarMedico()">ADICIONAR MÉDICO</button>
+        <button (click)="adicionarPaciente()">ADICIONAR PACIENTE </button>
+
+        <button (click)="mostrarMedicos()">LISTA DE MÉDICOS</button> 
+        <button (click)="mostrarPaciente()">LISTA DE PACIENTE</button>
+    </header>
+    <br><br>
+
     <div class="row">
         <h2 style="text-align: center;"> Informações dos leitos </h2>
     </div>
@@ -25,7 +37,4 @@
         </tr>
     </tbody>
 </table>
-<div style="text-align: right;">
-    <button mat-button style="background-color: lightgreen;" (click)="mudarRota()">Cadastrar Aluno</button>
-</div>
 </body>

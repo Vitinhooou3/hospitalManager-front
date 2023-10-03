@@ -32,8 +32,30 @@ export class ListaMedicosComponent implements OnInit {
     console.log(this.medicosList)
   }
 
-  mudarRota()
+  adicionarMedico()
   {
     this.router.navigate(['/criar-medico'])
   }
+
+  adicionarPaciente()
+  {
+    this.router.navigate(['/criar-paciente'])
+  }
+
+  adicionarLeito()
+  {
+this.router.navigate(['/criar-leito'])
+  }
+
+  mostrarPaciente()
+  {
+this.router.navigate(['/pacientes'])
+  }
+
+  mostrarLeitos()
+  {
+      this.router.navigate(['/detalhe-leito'])
+  }
+
+
 }

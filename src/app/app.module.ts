@@ -19,7 +19,7 @@ import { CalendarModule } from 'primeng/calendar';
 import { CheckboxModule } from 'primeng/checkbox';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { TableModule } from 'primeng/table';
-import { ToolbarModule } from 'primeng/toolbar';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { CriarMedicoComponent } from './criar-medico/criar-medico.component';
 import { ListaMedicosComponent } from './lista-medicos/lista-medicos.component';
@@ -50,7 +50,7 @@ import { DetalheLeitoComponent } from './detalhe-leito/detalhe-leito.component';
     CheckboxModule,
     MatCheckboxModule,
     TableModule,
-    ToolbarModule,
+    MatToolbarModule,
     TabMenuModule,
     
   ],
