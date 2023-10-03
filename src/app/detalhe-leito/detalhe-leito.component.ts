@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { leito } from '../leito';
-import { ActivatedRoute, Route } from '@angular/router';
+import { Router } from '@angular/router';
 import { LeitoService } from '../leito.service';
 
 @Component({
@@ -14,7 +14,7 @@ export class DetalheLeitoComponent implements OnInit {
   
   leitos : leito[]
   constructor(
-    private route : ActivatedRoute, 
+    private route : Router, 
     private leitoService: LeitoService
 
   )
@@ -23,17 +23,7 @@ export class DetalheLeitoComponent implements OnInit {
     this.leitos = []
   }
 
-  getLeitoById()
-  {
-    this.id = this.route.snapshot.params['id']
-
-    this.leito = new leito()
-    this.leitoService.getLeitoById(this.id).subscribe(idLeito => {
-      this.leito = idLeito
-      console.log(this.leito)
-    })
-
-  }
+  
   getLeitos() {
     this.leitoService.getleitosList().subscribe(leitosList => {
       this.leitos = leitosList;
@@ -45,12 +35,30 @@ export class DetalheLeitoComponent implements OnInit {
 
   ngOnInit() : void{
     this.getLeitos()
-    this.getLeitoById()
   }
   
-  mudarRota()
+  adicionarMedico()
   {
-    
+    this.route.navigate(['/criar-medico'])
+  }
+
+  adicionarPaciente()
+  {
+this.route.navigate(['/criar-paciente'])
+  }
+
+  adicionarLeito()
+  {
+this.route.navigate(['/criar-leito'])
+  }
+
+  mostrarPaciente()
+  {
+this.route.navigate(['/pacientes'])
+  }
+  mostrarMedicos()
+  {
+this.route.navigate(['/medicos'])
   }
 
 

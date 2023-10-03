@@ -33,9 +33,29 @@ export class CriarMedicoComponent {
     this.postMedico()
   }
 
-  mudarRota()
+  mostrarMedicos()
   {
     this.router.navigate(['/medicos'])
+  }
+
+  adicionarPaciente()
+  {
+    this.router.navigate(['/criar-paciente'])
+  }
+
+  adicionarleito()
+  {
+    this.router.navigate(['/criar-leito'])
+  }
+
+  mostrarLeitos()
+  {
+    this.router.navigate(['/home'])
+  }
+
+  mostrarPaciente()
+  {
+    this.router.navigate(['/pacientes'])
   }
 
 }

@@ -39,8 +39,30 @@ export class CriarPacienteComponent {
 
 
 
-  mudarRota()
+  mostrarPaciente()
   {
     this.rout.navigate(['/pacientes'])
   }
+
+  mostrarMedicos()
+  {
+    this.rout.navigate(['/medicos'])
+  }
+
+  mostrarLeitos()
+  {
+    this.rout.navigate(['/home'])
+  }
+
+  adicionarMedico()
+  {
+    this.rout.navigate(['/criar-medico'])
+  }
+
+  adicionarLeito()
+  {
+    this.rout.navigate(['/criar-leito'])
+  }
+
+
 }

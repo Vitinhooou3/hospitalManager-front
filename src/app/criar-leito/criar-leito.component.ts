@@ -14,7 +14,7 @@ export class CriarLeitoComponent {
 
   constructor(
     private leitoService: LeitoService,
-    private route: Router
+    private router: Router
   )
   {
 
@@ -36,17 +36,28 @@ export class CriarLeitoComponent {
     this.postLeito()
   }
 
-  mudarRota(){
-    this.route.navigate(['/home'])
+  mostrarMedicos()
+  {
+    this.router.navigate(['/medicos'])
   }
 
-  mudarRota2()
+  adicionarPaciente()
   {
-    this.route.navigate(['criar-paciente'])
+    this.router.navigate(['/criar-paciente'])
   }
 
-  mudarRota3()
+  adicionarMedico()
   {
-    this.route.navigate(['criar-medico'])
+    this.router.navigate(['/criar-medico'])
+  }
+
+  mostrarLeitos()
+  {
+    this.router.navigate(['/home'])
+  }
+
+  mostrarPaciente()
+  {
+    this.router.navigate(['/pacientes'])
   }
 }

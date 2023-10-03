@@ -34,8 +34,28 @@ export class ListaPacientesComponent implements OnInit {
   }
   
 
-  mudarRota(){
+  mostrarMedico(){
+    this.router.navigate(['/medicos'])
+  }
+
+  mostrarLeito()
+  {
+    this.router.navigate(['/detalhe-leito'])
+  }
+
+  adicionarPaciente()
+  {
     this.router.navigate(['/criar-paciente'])
+  }
+
+  adicionarLeito()
+  {
+    this.router.navigate(['/criar-leito'])
+  }
+
+  adicionarMedico()
+  {
+    this.router.navigate(['/criar-Medico'])
   }
 
 }
